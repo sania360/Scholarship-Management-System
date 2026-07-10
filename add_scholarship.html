@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Scholarship</title>
+</head>
+<body>
+
+<h2>Add Scholarship</h2>
+<form method="post" action="save_scholarship.php">
+    Scholarship Name: <input type="text" name="name" required><br><br>
+    Institute: <input type="text" name="institute" required><br><br>
+    Benefits: <textarea name="benefits" required></textarea><br><br>
+    Degree Level:
+    <select name="degree">
+        <option>Bachelor</option>
+        <option>Master</option>
+        <option>PhD</option>
+    </select><br><br>
+    Minimum Percentage: <input type="number" step="0.01" name="min_percentage" required><br><br>
+    Country: <input type="text" name="country" required><br><br>
+
+    <input type="submit" value="Add Scholarship">
+</form>
+
+</body>
+</html>
